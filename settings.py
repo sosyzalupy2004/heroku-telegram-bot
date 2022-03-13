@@ -1,3 +1,4 @@
+import os
 api_tg = os.environ['TELEGRAM_TOKEN'] # сюда токен бота
 api_qiwi = os.environ['QIWI_TOKEN']# сюда токен апи киви
 num_qiwi = os.environ['QIWI_NUM'] # сюда номер киви
