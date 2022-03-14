@@ -95,7 +95,7 @@ try:
             if func.check_payment(id) != None:
                sum = int(func.total_cheque(id)[1])
                if int(func.total_cheque(id)[1])<5000:
-                    bot.send_message(id,'Оплата принята! По вопросам логистики: @viphqd')
+                   bot.send_message(id,'Оплата принята! По вопросам логистики: @viphqd')
                    func.pay_seller(sum)
                    bot.send_message(settings.my_id, f'Новый заказ oт {call.from_user.id}:\n' + func.include(call.from_user.id) + f'/n Адрес: {func.get_adr(call.from_user.id)}')
                    bot.send_message(settings.seller_id, f'Новый заказ oт {call.from_user.id}:\n' + func.include(call.from_user.id) + f'/n Адрес: {func.get_adr(call.from_user.id)}')
